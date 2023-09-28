@@ -7,6 +7,8 @@ topic = st.selectbox("Please select one topic to generate ideas on.",
     ['Painting', 'Music' , 'Sculptures', 'Nonfiction', 'Fiction', 'Videos'])
 if(st.button("Submit")):
     st.subheader("Some ideas to get you started")
-    st.write("Sorry! Because of some error, your ideas could not be generated.")
+    if topic == str("Music"):
+        st.button("Focus on rhythm first")
+
     st.subheader("Find some more ideas")
     st.write("go touch grass")
